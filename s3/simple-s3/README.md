@@ -9,10 +9,19 @@ Creates a simple, no frills S3 Bucket. Probably not even useful.
 
 
 Validate the template:
-- `aws cloudformation validate-template --template-body file://template.yaml | jq`
+
+```bash
+aws cloudformation validate-template --template-body file://template.yaml | jq
+```
 
 List the stacks:
-- `aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE | jq`
+
+```bash
+aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE | jq
+```
 
 Delete the stack:
-- `aws cloudformation delete-stack --stack-name simple-s3`
+
+```bash
+aws cloudformation delete-stack --stack-name simple-s3
+```
